@@ -1,0 +1,11 @@
+[10/03/2026, 09:12] Alice: Bom dia, você viu o relatório que enviei ontem?
+[10/03/2026, 09:14] Bruno: Oi Alice, sim, vi sim. Achei que faltaram alguns dados sobre os prazos.
+[10/03/2026, 09:15] Alice: Ah, verdade. Vou complementar ainda hoje.
+[10/03/2026, 09:18] Bruno: Perfeito. Mas precisamos agilizar, estou com muita pressão do chefe.
+[10/03/2026, 09:20] Alice: Entendi, vou priorizar isso então.
+[10/03/2026, 09:25] Bruno: Obrigado! Às vezes parece que tudo está dando errado 😓
+[10/03/2026, 09:30] Alice: Não desanima, a equipe está junto nisso. Conseguimos! 💪
+[10/03/2026, 09:35] Bruno: Você sempre me anima. Valeu mesmo.
+[10/03/2026, 09:40] Alice: Sem problemas! Vamos resolver tudo ainda hoje.
+[10/03/2026, 09:45] Bruno: Ótimo, me sinto muito mais confiante agora.
+[10/03/2026, 09:50] Alice: Essa é a ideia! 😊

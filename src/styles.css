@@ -1,0 +1,252 @@
+/* RESET */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  background: #E5DDD5;
+  color: #111B21;
+}
+
+/* HEADER */
+
+.header {
+  background: #075E54;
+  color: white;
+  padding: 16px 24px;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.header::before{
+  content:"🟢";
+  font-size:22px;
+}
+
+/* GRID PRINCIPAL */
+
+.container {
+  display: grid;
+  grid-template-columns: minmax(280px,22rem) 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width:900px){
+  .container{
+    grid-template-columns:1fr;
+  }
+}
+
+/* SIDEBAR */
+
+.container > div:first-child{
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+/* CARDS */
+
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow:
+  0 2px 6px rgba(0,0,0,0.08),
+  0 8px 18px rgba(0,0,0,0.04);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.card:hover{
+  transform: translateY(-2px);
+  box-shadow:
+  0 6px 16px rgba(0,0,0,0.12),
+  0 12px 26px rgba(0,0,0,0.06);
+}
+
+/* FORM */
+
+label{
+  font-size:13px;
+  font-weight:600;
+  margin-bottom:4px;
+  display:block;
+}
+
+textarea,
+input,
+select{
+  width:100%;
+  padding:8px 10px;
+  border-radius:8px;
+  border:1px solid #d1d7db;
+  font-size:14px;
+}
+
+textarea:focus,
+input:focus,
+select:focus{
+  outline:none;
+  border-color:#25D366;
+  box-shadow:0 0 0 2px rgba(37,211,102,0.15);
+}
+
+/* BOTÃO */
+
+button{
+  background:#25D366;
+  border:none;
+  color:white;
+  padding:12px;
+  border-radius:10px;
+  font-size:15px;
+  font-weight:600;
+  cursor:pointer;
+  transition:all .2s ease;
+}
+
+button:hover{
+  background:#1ebe5b;
+}
+
+button:disabled{
+  opacity:0.6;
+  cursor:not-allowed;
+}
+
+/* KPI GRID */
+
+.kpi-grid{
+  display:grid;
+  grid-template-columns: repeat(5,1fr);
+  gap:16px;
+}
+
+@media (max-width:1000px){
+.kpi-grid{
+grid-template-columns:repeat(3,1fr);
+}
+}
+
+@media (max-width:600px){
+.kpi-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+/* KPI CARD */
+
+.kpi{
+  text-align:center;
+  font-size:28px;
+  font-weight:700;
+  color:#075E54;
+}
+
+.kpi::after{
+  display:block;
+  font-size:13px;
+  font-weight:500;
+  margin-top:4px;
+  color:#667781;
+}
+
+/* CHIPS */
+
+.chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.chip{
+  background:#DCF8C6;
+  color:#075E54;
+  padding:6px 12px;
+  border-radius:18px;
+  font-size:13px;
+  font-weight:500;
+}
+
+/* BADGE */
+
+.badge{
+  background:#25D366;
+  color:white;
+  border-radius:20px;
+  padding:4px 10px;
+  font-size:12px;
+  font-weight:600;
+  margin-left:6px;
+}
+
+/* LISTAS */
+
+.list-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+
+@media(max-width:900px){
+.list-grid{
+grid-template-columns:1fr;
+}
+}
+
+ul{
+  padding-left:18px;
+}
+
+li{
+  margin-bottom:6px;
+  font-size:14px;
+}
+
+/* TITULOS */
+
+h3{
+  margin-top:0;
+  margin-bottom:10px;
+  font-size:16px;
+  font-weight:600;
+  color:#075E54;
+}
+
+/* SELECT FILTRO */
+
+select{
+  max-width:220px;
+}
+
+/* BLOCO SENTIMENTO */
+
+.card p{
+  font-size:14px;
+  line-height:1.5;
+}
+
+/* SCROLL MAIS BONITO */
+
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#c7c7c7;
+  border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:#999;
+}

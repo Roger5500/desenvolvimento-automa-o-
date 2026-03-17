@@ -1,0 +1,499 @@
+/* ============================= */
+/* HEADER DA APLICAÇÃO */
+/* ============================= */
+
+.app-header{
+
+background:#0f6a5a;
+color:white;
+padding:22px 40px;
+border-radius:12px;
+margin:20px 30px;
+
+box-shadow:0 4px 12px rgba(0,0,0,0.15);
+
+}
+
+.header-content{
+
+display:flex;
+align-items:center;
+gap:18px;
+
+}
+
+.header-icon{
+
+font-size:34px;
+
+}
+
+.app-header h1{
+
+margin:0;
+font-size:26px;
+font-weight:700;
+
+}
+
+.app-header p{
+
+margin:4px 0 0 0;
+opacity:0.9;
+font-size:14px;
+
+}
+
+
+/* ============================= */
+/* CORES WHATSAPP */
+/* ============================= */
+
+:host{
+--wa-green:#25d366;
+--wa-dark:#075e54;
+--wa-bg:#e5ddd5;
+--wa-card:#ffffff;
+--wa-border:#e6e6e6;
+--wa-text:#2d2d2d;
+--wa-muted:#6b6b6b;
+}
+
+
+/* ============================= */
+/* BASE */
+/* ============================= */
+
+.container{
+display:grid;
+grid-template-columns:minmax(300px,22rem) 1fr;
+gap:40px;
+padding:30px;
+background:var(--wa-bg);
+min-height:100vh;
+font-family:"Segoe UI",Helvetica,Arial,sans-serif;
+color:var(--wa-text);
+}
+
+
+/* ============================= */
+/* SIDEBAR */
+/* ============================= */
+
+.sidebar{
+background:var(--wa-card);
+padding:26px;
+border-radius:14px;
+box-shadow:0 4px 16px rgba(0,0,0,0.08);
+display:flex;
+flex-direction:column;
+gap:18px;
+position:sticky;
+top:24px;
+height:fit-content;
+}
+
+.sidebar h2{
+margin-bottom:10px;
+color:var(--wa-dark);
+}
+
+
+/* ============================= */
+/* INPUTS */
+/* ============================= */
+
+label{
+font-size:14px;
+font-weight:600;
+color:var(--wa-muted);
+margin-top:6px;
+}
+
+textarea,
+select,
+input{
+width:100%;
+padding:12px;
+border-radius:8px;
+border:1px solid var(--wa-border);
+font-size:14px;
+}
+
+textarea{
+min-height:130px;
+resize:vertical;
+}
+
+
+/* ============================= */
+/* SLIDER */
+/* ============================= */
+
+.p-slider{
+margin-top:8px;
+margin-bottom:4px;
+}
+
+
+/* ============================= */
+/* FILE UPLOAD */
+/* ============================= */
+
+input[type=file]{
+border:2px dashed #7ad3a2;
+padding:22px;
+text-align:center;
+background:#f6fff9;
+border-radius:10px;
+}
+
+
+/* ============================= */
+/* BOTÃO */
+/* ============================= */
+
+button{
+margin-top:12px;
+background:var(--wa-green);
+border:none;
+padding:15px;
+border-radius:10px;
+font-size:16px;
+font-weight:600;
+color:white;
+cursor:pointer;
+transition:0.2s;
+}
+
+button:hover{
+background:#20bd5a;
+}
+
+button:disabled{
+background:#a6e4c4;
+cursor:not-allowed;
+}
+
+
+/* ============================= */
+/* DASHBOARD */
+/* ============================= */
+
+.dashboard{
+display:flex;
+flex-direction:column;
+gap:60px;
+}
+
+
+/* ============================= */
+/* KPIs */
+/* ============================= */
+
+.kpis{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:28px;
+margin-bottom:40px; /* espaço abaixo dos KPIs */
+}
+
+.kpi-card{
+background:white;
+padding:26px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 3px 12px rgba(0,0,0,0.06);
+}
+
+.kpi-card h3{
+font-size:32px;
+color:#1f8f7b;
+margin-bottom:6px;
+}
+
+.kpi-card span{
+font-size:14px;
+color:var(--wa-muted);
+}
+
+
+/* ============================= */
+/* CARDS */
+/* ============================= */
+
+.card{
+background:var(--wa-card);
+padding:30px;
+border-radius:14px;
+box-shadow:0 4px 14px rgba(0,0,0,0.06);
+margin-bottom:36px; /* espaço entre resumo e sentimento */
+}
+
+.card h2{
+margin-bottom:16px;
+}
+
+.card p{
+line-height:1.7;
+font-size:15px;
+}
+
+
+/* ============================= */
+/* PARTICIPANTES */
+/* ============================= */
+
+.participants-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-top:20px;
+margin-bottom:16px;
+}
+
+.filter{
+display:flex;
+flex-direction:column;
+font-size:13px;
+}
+
+.filter select{
+margin-top:6px;
+}
+
+
+/* ============================= */
+/* PARTICIPANTES (CHIPS MELHORADAS) */
+/* ============================= */
+
+.chips{
+
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-bottom:30px;
+
+padding:10px;
+background:#f8fffb;
+border-radius:12px;
+border:1px solid #e6f5ec;
+
+}
+
+/* chip individual */
+
+.chip{
+
+display:flex;
+align-items:center;
+gap:8px;
+
+background:white;
+color:#075e54;
+
+padding:8px 14px;
+border-radius:20px;
+
+font-size:13px;
+font-weight:600;
+
+border:1px solid #b9ebd3;
+
+box-shadow:0 2px 6px rgba(0,0,0,0.05);
+
+transition:all 0.2s ease;
+
+}
+
+/* ícone do participante */
+
+.chip::before{
+
+font-size:12px;
+
+}
+
+/* hover */
+
+.chip:hover{
+
+background:#25d366;
+color:white;
+
+transform:translateY(-1px);
+
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+}
+
+/* ============================= */
+/* LISTAS */
+/* ============================= */
+
+.lists{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:36px;
+margin-top:20px;
+}
+
+
+/* ============================= */
+/* BADGE */
+/* ============================= */
+
+.badge{
+background:#1f8f7b;
+color:white;
+border-radius:50%;
+width:28px;
+height:28px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:13px;
+}
+
+
+/* ============================= */
+/* LIST ITEMS */
+/* ============================= */
+
+ul{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+li{
+padding:16px 0;
+border-bottom:1px solid var(--wa-border);
+font-size:14px;
+line-height:1.6;
+}
+
+li:last-child{
+border-bottom:none;
+}
+
+
+/* ============================= */
+/* RESPONSIVO */
+/* ============================= */
+
+@media(max-width:1200px){
+
+.kpis{
+grid-template-columns:repeat(3,1fr);
+}
+
+}
+
+@media(max-width:900px){
+
+.container{
+grid-template-columns:1fr;
+}
+
+.sidebar{
+position:relative;
+top:auto;
+}
+
+.kpis{
+grid-template-columns:repeat(2,1fr);
+}
+
+.lists{
+grid-template-columns:1fr;
+}
+
+}
+
+/* ============================= */
+/* ERROR MESSAGE */
+/* ============================= */
+
+.error-banner{
+
+background:#ffe9e9;
+color:#a30000;
+padding:16px 20px;
+border-radius:10px;
+border:1px solid #ffc5c5;
+font-size:14px;
+font-weight:500;
+
+display:flex;
+align-items:center;
+gap:10px;
+
+box-shadow:0 3px 8px rgba(0,0,0,0.05);
+}
+
+
+/* ============================= */
+/* TEMPERATURE BAR */
+/* ============================= */
+
+.temperature-bar{
+
+display:flex;
+align-items:center;
+gap:10px;
+margin-top:6px;
+font-size:12px;
+color:var(--wa-muted);
+
+}
+
+.label-left{
+font-weight:600;
+}
+
+.label-right{
+font-weight:600;
+}
+
+.bar{
+
+flex:1;
+height:8px;
+background:linear-gradient(
+90deg,
+#25d366 0%,
+#53ff6a 50%,
+#199600 100%
+);
+border-radius:6px;
+position:relative;
+cursor:pointer;
+
+}
+
+.bar-indicator{
+
+position:absolute;
+top:-5px;
+width:16px;
+height:16px;
+background:white;
+border:2px solid #075e54;
+border-radius:50%;
+transform:translateX(-50%);
+box-shadow:0 2px 6px rgba(0,0,0,0.2);
+pointer-events:none;
+
+}
+
+/* ============================= */
+/* HEADER ICON IMAGE */
+/* ============================= */
+
+.header-icon img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    border-radius: 50%; /* Faz a imagem ficar redondinha se for quadrada */
+}
