@@ -1,7 +1,7 @@
 Relatório Retrospectivo:
 
 Durante o desenvolvimento e os testes, alguns desafios técnicos se destacaram.
-O maior deles foi lidar com a análise de sentimento da conversa. Como a resposta da IA nem sempre vinha com o formato esperado, foi necessário implementar validações adicionais para evitar erros na interface. Em alguns casos, a aplicação precisava mostrar uma mensagem padrão quando a descrição do sentimento não estava presente. Outro desafio foi configurar corretamente os testes automatizados com Playwright, especialmente a parte de interceptação da API para simular respostas da IA. Isso foi importante para tornar os testes reproduzíveis e independentes da API real.
+O maior deles foi lidar com a análise de sentimento da conversa. Como a resposta da IA nem sempre vinha com o formato esperado, foi necessário implementar validações adicionais para evitar erros na interface. Em alguns casos, a aplicação precisava mostrar uma mensagem padrão quando a descrição do sentimento não estava presente. Outro desafio foi configurar corretamente os testes automatizados com Playwright, especialmente a parte de interceptação da API para simular respostas da IA. Isso foi importante para tornar os testes reproduzíveis e independentes da API real. E infelizmente não consegui resolver um problema no analisar o sentimento, com as vezes em uma conversa com teor negativo pode ser retornado um número negativo(ex: -20/10).
 
 A Inteligência Artificial também foi utilizada durante o processo de desenvolvimento para:
 
